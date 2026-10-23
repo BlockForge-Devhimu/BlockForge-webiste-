@@ -306,7 +306,17 @@ function App() {
         </section>
       </main>
 
-      <footer className="footer section-wrap">
+      <a
+  href="https://wa.me/917068199604?text=Hi%20BlockForge%21%20I%27m%20interested%20in%20your%20blockchain%20development%20services."
+  className="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with BlockForge on WhatsApp"
+>
+  <span className="whatsapp-icon">✆</span>
+  <span>WhatsApp</span>
+</a>
+<footer className="footer section-wrap">
         <a className="brand" href="#home">
           <span className="brand-mark">B</span>
           <span>BlockForge<span className="brand-dot">.</span></span>

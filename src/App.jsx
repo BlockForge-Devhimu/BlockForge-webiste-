@@ -157,11 +157,26 @@ function App() {
 
         <section className="trust-strip">
           <span>BUILT WITH MODERN TECHNOLOGY</span>
-          <div>Solidity</div>
-          <div>Rust</div>
-          <div>React</div>
-          <div>Substrate</div>
-          <div>Web3</div>
+          <div className="tech-card">
+  <img src="https://cdn.simpleicons.org/solidity/white" alt="Solidity" />
+  <span>Solidity</span>
+</div>
+<div className="tech-card">
+  <img src="https://cdn.simpleicons.org/rust/white" alt="Rust" />
+  <span>Rust</span>
+</div>
+<div className="tech-card">
+  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+  <span>React</span>
+</div>
+<div className="tech-card">
+  <img src="https://cdn.simpleicons.org/polkadot/E6007A" alt="Substrate" />
+  <span>Substrate</span>
+</div>
+<div className="tech-card">
+  <img src="https://cdn.simpleicons.org/web3dotjs/white" alt="Web3" />
+  <span>Web3</span>
+</div>
         </section>
 
         <section className="section-wrap services-section" id="services">

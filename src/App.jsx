@@ -308,7 +308,85 @@ function App() {
           </div>
         </section>
       </main>
+      <dialog id="inquiry-form" className="inquiry-dialog">
+  <div className="inquiry-header">
+    <h2>Project Inquiry</h2>
+    <button
+      type="button"
+      onClick={() =>
+        document.getElementById("inquiry-form").close()
+      }
+      aria-label="Close form"
+    >
+      ✕
+    </button>
+  </div>
 
+  <form
+    action="https://formsubmit.co/versatilehimu@gmail.com"
+    method="POST"
+  >
+    <input type="hidden" name="_subject" value="New BlockForge Project Inquiry" />
+    <input type="hidden" name="_captcha" value="true" />
+    <input type="hidden" name="_template" value="table" />
+
+    <label>
+      Full name *
+      <input type="text" name="Full name" required />
+    </label>
+
+    <label>
+      Email *
+      <input type="email" name="Email" required />
+    </label>
+
+    <label>
+      WhatsApp number *
+      <input type="tel" name="WhatsApp number" required />
+    </label>
+
+    <label>
+      Project type *
+      <select name="Project type" required>
+        <option value="">Select project type</option>
+        <option>Blockchain / L1 / L2</option>
+        <option>Smart contract development</option>
+        <option>dApp / Web3 development</option>
+        <option>Token development</option>
+        <option>DeFi / DAO</option>
+        <option>RWA tokenization</option>
+        <option>Website / Software development</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label>
+      Estimated budget (USD) *
+      <select name="Estimated budget (USD)" required>
+        <option value="">Select estimated budget</option>
+        <option>Under $1,000</option>
+        <option>$1,000–$2,500</option>
+        <option>$2,500–$5,000</option>
+        <option>$5,000–$10,000</option>
+        <option>$10k+</option>
+      </select>
+    </label>
+
+    <label>
+      Project details *
+      <textarea
+        name="Project details"
+        rows="5"
+        required
+        placeholder="Tell us about your project, requirements, and goals."
+      />
+    </label>
+
+    <button type="submit" className="button-primary">
+      Submit Inquiry ↗
+    </button>
+  </form>
+</dialog>
       <a
 href="https://wa.me/917068199604?text=Hello%20BlockForge%2C%20I%27m%20interested%20in%20your%20blockchain%20development%20services.%20I%27d%20like%20to%20discuss%20a%20project."
   className="whatsapp-float"

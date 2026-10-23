@@ -1108,14 +1108,60 @@ textarea {
 
 @media (max-width: 480px) {
   .inquiry-dialog {
-    width: 88%;
-    max-width: none;
+    width: 92%;
+    max-width: 420px;
+    max-height: 85vh;
     padding: 20px;
+    box-sizing: border-box;
     border-radius: 16px;
+    overflow-y: auto;
+  }
+
+  .inquiry-header {
+    margin-bottom: 20px;
   }
 
   .inquiry-header h2 {
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .inquiry-dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .inquiry-dialog label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+
+  .inquiry-dialog input,
+  .inquiry-dialog select,
+  .inquiry-dialog textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .inquiry-dialog textarea {
+    min-height: 120px;
+  }
+
+  .inquiry-dialog .button-primary {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 4px;
   }
 }
 

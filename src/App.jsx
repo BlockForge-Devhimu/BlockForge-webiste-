@@ -307,14 +307,13 @@ function App() {
       </main>
 
       <a
-  href="https://wa.me/917068199604?text=Hi%20BlockForge%21%20I%27m%20interested%20in%20your%20blockchain%20development%20services."
+  href="https://wa.me/917068199604?text=Hi%20BlockForge"
   className="whatsapp-float"
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat with BlockForge on WhatsApp"
 >
-  <span className="whatsapp-icon">✆</span>
-  <span>WhatsApp</span>
+  <span className="whatsapp-icon">◉</span>
 </a>
 <footer className="footer section-wrap">
         <a className="brand" href="#home">

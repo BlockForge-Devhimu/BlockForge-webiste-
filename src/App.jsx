@@ -292,12 +292,15 @@ function App() {
               Tell us about your idea, technical requirements, or development
               goals. Let's explore how we can work together.
             </p>
-            <a
-              className="button-primary"
-              href="mailto:hello@blockforge.dev?subject=BlockForge%20Project%20Enquiry"
-            >
-              Discuss a project <span>↗</span>
-            </a>
+            <button
+  type="button"
+  className="button-primary"
+  onClick={() =>
+    document.getElementById("inquiry-form").showModal()
+  }
+>
+  Discuss a project <span>↗</span>
+</button>
             <div className="contact-caption">
               Replace this sample email with your preferred business email
               before launching.

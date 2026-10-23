@@ -301,10 +301,6 @@ function App() {
 >
   Discuss a project <span>↗</span>
 </button>
-            <div className="contact-caption">
-              Replace this sample email with your preferred business email
-              before launching.
-            </div>
           </div>
         </section>
       </main>

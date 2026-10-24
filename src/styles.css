@@ -2118,3 +2118,39 @@ font-size: 19px;
 font-size: 13px;
 }
 }
+/* Center the compact Visit Us card */
+.visit-section {
+padding: 15px 20px 25px;
+}
+
+.visit-card {
+max-width: 520px;
+margin: 0 auto;
+padding: 20px;
+gap: 14px;
+border: 1px solid rgba(181, 243, 106, 0.25);
+border-radius: 18px;
+background: #111411;
+align-items: center;
+}
+
+.visit-icon {
+flex-shrink: 0;
+}
+
+.visit-content {
+min-width: 0;
+}
+
+@media (max-width: 600px) {
+.visit-section {
+padding: 15px 20px 25px;
+}
+
+.visit-card {
+max-width: 100%;
+padding: 18px 14px;
+gap: 12px;
+align-items: flex-start;
+}
+}

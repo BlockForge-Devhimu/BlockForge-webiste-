@@ -215,8 +215,22 @@ function App() {
           </div>
         </section>
 <section className="experience-section">
-      <div className="section-wrap">
-        <div className="experience-grid">
+  <div className="section-wrap">
+<div className="section-heading experience-heading">
+  <div>
+    <div className="eyebrow">OUR TRACK RECORD</div>
+    <h2>
+      Experience.
+      <br />
+      <span>Expertise. Execution.</span>
+    </h2>
+  </div>
+  <p>
+    A team of technology professionals focused on building
+    reliable blockchain and software solutions.
+  </p>
+</div>
+<div className="experience-grid">
       <article className="experience-card">
         <div className="experience-image">
           <img

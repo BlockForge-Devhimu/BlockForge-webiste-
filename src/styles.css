@@ -2204,3 +2204,10 @@ line-height: 1.7;
 .visit-description {
 display: none;
 }
+/* Center the Our Presence label */
+.visit-content .eyebrow {
+width: 100%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}

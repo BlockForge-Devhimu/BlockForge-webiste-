@@ -521,10 +521,6 @@ href="https://wa.me/917068199604?text=Hello%20BlockForge%2C%20I%27m%20interested
         Pune, Maharashtra – 411005,<br />
         India
       </p>
-      <p className="visit-description">
-        Building innovative blockchain and software solutions
-        for businesses worldwide.
-      </p>
     </div>
   </div>
 </section>

@@ -214,7 +214,68 @@ function App() {
             ))}
           </div>
         </section>
-
+<section className="experience-section">
+      <div className="section-wrap">
+        <div className="experience-grid">
+      <article className="experience-card">
+        <div className="experience-image">
+          <img
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80"
+            alt="Technology professionals collaborating as a team"
+            loading="lazy"
+          />
+        </div>
+        <span className="experience-number">01</span>
+        <div className="experience-content">
+          <h3>30+ Technology Experts Building the Future</h3>
+          <p>
+            A diverse team of blockchain engineers and software
+            developers bringing technical expertise together to
+            turn ambitious ideas into practical digital solutions.
+          </p>
+        </div>
+      </article>
+      <article className="experience-card">
+        <div className="experience-image">
+          <img
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
+            alt="Modern workspace for technology and software development"
+            loading="lazy"
+          />
+        </div>
+        <span className="experience-number">02</span>
+        <div className="experience-content">
+          <h3>7+ Years of Quality-Driven Experience</h3>
+          <p>
+            Years of experience in blockchain and software
+            engineering, focused on thoughtful architecture,
+            dependable development, and solutions built for
+            real-world business needs.
+          </p>
+        </div>
+      </article>
+      <article className="experience-card">
+        <div className="experience-image">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+            alt="Software development team working together on projects"
+            loading="lazy"
+          />
+        </div>
+        <span className="experience-number">03</span>
+        <div className="experience-content">
+          <h3>100+ Projects Turning Ideas Into Reality</h3>
+          <p>
+            From smart contracts and blockchain platforms to
+            Web3 applications and custom software, our project
+            experience spans a range of technical challenges
+            and business requirements.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
         <section className="work-section" id="work">
           <div className="section-wrap">
             <div className="section-heading">

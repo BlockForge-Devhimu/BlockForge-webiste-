@@ -1947,3 +1947,21 @@ font-size: 15px;
 line-height: 1.8;
 }
 }
+/* BlockForge Experience Section Heading */
+.experience-heading {
+margin-bottom: 42px;
+}
+
+.experience-heading .eyebrow {
+color: #b5f36a;
+margin-bottom: 16px;
+}
+
+.experience-heading h2 {
+margin: 0;
+}
+
+.experience-heading > p {
+max-width: 560px;
+line-height: 1.8;
+}

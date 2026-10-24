@@ -1564,3 +1564,26 @@ animation: none !important;
     transform: translateZ(18px) rotateY(8deg);
   }
 }
+/* BlockForge 3D core refinement */
+.visual-card .core-3d {
+  transform-style: preserve-3d;
+  animation: bf-core-float 4s ease-in-out infinite !important;
+}
+
+.visual-card .core-3d span {
+  display: inline-block;
+  transform: none !important;
+  animation: none !important;
+  font-weight: 800;
+  color: #b5f36a;
+  text-shadow: 0 0 18px rgba(181, 243, 106, 0.45);
+}
+
+@keyframes bf-core-float {
+  0%, 100% {
+    transform: translateY(0) translateZ(0);
+  }
+  50% {
+    transform: translateY(-6px) translateZ(10px);
+  }
+}

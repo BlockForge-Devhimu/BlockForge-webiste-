@@ -1790,16 +1790,11 @@ animation: none !important;
 @keyframes bf-3d-orbit-three {
   from {
     transform: translate(-50%, -50%)
-      rotateX(45deg)
-      rotateY(45deg)
-      rotateZ(0deg);
+      rotateX(45deg) rotateY(45deg) rotateZ(0deg);
   }
-
   to {
     transform: translate(-50%, -50%)
-      rotateX(45deg)
-      rotateY(45deg)
-      rotateZ(360deg);
+      rotateX(45deg) rotateY(45deg) rotateZ(360deg);
   }
 }
 

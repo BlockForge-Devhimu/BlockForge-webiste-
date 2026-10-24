@@ -1737,3 +1737,70 @@ animation: none !important;
     animation: none !important;
   }
 }
+/* BlockForge: true 3D orbital rotation */
+.visual-card .orbital.orbital-3d {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 900px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+}
+.visual-card .orbital-3d .orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 210px;
+  height: 210px;
+  margin: 0;
+  border: 1px solid rgba(181, 243, 106, 0.9);
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  box-shadow: 0 0 8px rgba(181, 243, 106, 0.12);
+}
+.visual-card .orbital-3d .orbit-one {
+  animation: bf-3d-orbit-one 6s linear infinite;
+}
+.visual-card .orbital-3d .orbit-two {
+  animation: bf-3d-orbit-two 8s linear infinite;
+}
+.visual-card .orbital-3d .orbit-three {
+  animation: bf-3d-orbit-three 10s linear infinite;
+}
+@keyframes bf-3d-orbit-one {
+  from {
+    transform: translate(-50%, -50%) rotateX(65deg) rotateZ(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(65deg) rotateZ(360deg);
+  }
+}
+@keyframes bf-3d-orbit-two {
+  from {
+    transform: translate(-50%, -50%) rotateY(65deg) rotateZ(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateY(65deg) rotateZ(360deg);
+  }
+}
+@keyframes bf-3d-orbit-three {
+  from {
+    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(360deg);
+  }
+}
+@media (max-width: 600px) {
+  .visual-card .orbital.orbital-3d {
+    height: 320px;
+  }
+  .visual-card .orbital-3d .orbit {
+    width: 185px;
+    height: 185px;
+  }
+}

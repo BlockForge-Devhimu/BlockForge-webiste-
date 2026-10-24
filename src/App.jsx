@@ -169,15 +169,19 @@ function App() {
 </div>
 <div className="tech-card">
   <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
-  <span>React</span>
+  <span>React.js</span>
 </div>
 <div className="tech-card">
-  <img src="https://cdn.simpleicons.org/polkadot/E6007A" alt="Substrate" />
-  <span>Substrate</span>
+  <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" />
+  <span>Node.js</span>
 </div>
 <div className="tech-card">
   <img src="https://cdn.simpleicons.org/web3dotjs/white" alt="Web3" />
   <span>Web3</span>
+</div>
+<div className="tech-card">
+  <span className="software-icon">{"</>"}</span>
+  <span>Software Engineering</span>
 </div>
         </section>
 

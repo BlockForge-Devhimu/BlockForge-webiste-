@@ -1789,12 +1789,20 @@ animation: none !important;
 }
 @keyframes bf-3d-orbit-three {
   from {
-    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+    transform: translate(-50%, -50%)
+      rotateX(45deg)
+      rotateY(45deg)
+      rotateZ(0deg);
   }
+
   to {
-    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(360deg);
+    transform: translate(-50%, -50%)
+      rotateX(45deg)
+      rotateY(45deg)
+      rotateZ(360deg);
   }
 }
+
 @media (max-width: 600px) {
   .visual-card .orbital.orbital-3d {
     height: 320px;

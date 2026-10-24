@@ -1231,3 +1231,81 @@ textarea {
   transform: translateY(-4px);
   border-color: var(--accent);
 }
+/* BlockForge animated blockchain logo */
+.visual-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-card .visual-art {
+  position: relative;
+  isolation: isolate;
+}
+
+.visual-card .visual-art::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(181, 243, 106, 0.65);
+  border-radius: 50%;
+  box-shadow: 0 0 35px rgba(181, 243, 106, 0.12);
+  animation: bf-orbit 12s linear infinite;
+  z-index: -1;
+}
+
+.visual-card .visual-art::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 90px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  border: 1px solid rgba(181, 243, 106, 0.25);
+  border-radius: 50%;
+  animation: bf-orbit-reverse 9s linear infinite;
+  z-index: -1;
+}
+
+.visual-card .visual-art > * {
+  animation: bf-logo-pulse 3s ease-in-out infinite;
+}
+
+@keyframes bf-orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes bf-orbit-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(-35deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(325deg);
+  }
+}
+
+@keyframes bf-logo-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(181, 243, 106, 0.15));
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(181, 243, 106, 0.7));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visual-card .visual-art::before,
+  .visual-card .visual-art::after,
+  .visual-card .visual-art > * {
+    animation: none;
+  }
+}

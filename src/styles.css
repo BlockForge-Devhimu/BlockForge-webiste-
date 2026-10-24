@@ -2244,3 +2244,28 @@ margin-bottom: 0 !important;
 margin-top: 0 !important;
 padding-top: 30px !important;
 }
+/* Fine-tune Visit Us spacing */
+.visit-section {
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+}
+
+.visit-card {
+gap: 6px !important;
+}
+
+.visit-content .eyebrow {
+margin-bottom: 5px !important;
+}
+
+.visit-content h2 {
+margin-bottom: 5px !important;
+}
+
+.visit-address {
+line-height: 1.4 !important;
+}
+
+.visit-section + .footer {
+padding-top: 15px !important;
+}

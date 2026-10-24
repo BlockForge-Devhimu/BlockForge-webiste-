@@ -196,8 +196,7 @@ function App() {
               </h2>
             </div>
             <p>
-              From protocol-level engineering to polished user experiences,
-              we help teams build and scale blockchain products.
+              From blockchain infrastructure to complete software applications, we help businesses turn ambitious ideas into secure, scalable, production-ready technology.
             </p>
           </div>
 

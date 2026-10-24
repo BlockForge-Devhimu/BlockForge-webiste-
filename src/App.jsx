@@ -130,18 +130,20 @@ function App() {
               <span className="live-indicator">● LIVE CONCEPT</span>
             </div>
 
-            <div className="orbital">
-              <div className="orbit orbit-one" />
-              <div className="orbit orbit-two" />
-              <div className="orbit orbit-three" />
-              <div className="core">
-                <span>B</span>
-              </div>
-              <span className="node node-one" />
-              <span className="node node-two" />
-              <span className="node node-three" />
-              <span className="node node-four" />
-            </div>
+            <div className="orbital orbital-3d">
+  <div className="orbit orbit-one" />
+  <div className="orbit orbit-two" />
+  <div className="orbit orbit-three" />
+
+  <div className="core core-3d">
+    <span>B</span>
+  </div>
+
+  <span className="node node-one" />
+  <span className="node node-two" />
+  <span className="node node-three" />
+  <span className="node node-four" />
+</div>
 
             <div className="visual-bottom">
               <div>

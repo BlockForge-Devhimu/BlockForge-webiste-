@@ -1769,7 +1769,10 @@ animation: none !important;
   animation: bf-3d-orbit-two 8s linear infinite;
 }
 .visual-card .orbital-3d .orbit-three {
-  animation: bf-3d-orbit-three 10s linear infinite;
+  animation: bf-3d-orbit-three 10s linear infinite !important;
+  transform-origin: center center;
+  transform-box: border-box;
+  will-change: transform;
 }
 @keyframes bf-3d-orbit-one {
   from {

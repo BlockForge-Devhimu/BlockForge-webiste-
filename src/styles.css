@@ -1804,7 +1804,7 @@ animation: none !important;
     height: 185px;
   }
 }
-/* BlockForge: continuous 3D orbital animation */
+/* BlockForge: true 3D orbital rotation */
 .visual-card .orbital.orbital-3d {
   position: relative;
   perspective: 900px;
@@ -1821,35 +1821,43 @@ animation: none !important;
   border: 1px solid rgba(181, 243, 106, 0.9);
   border-radius: 50%;
   transform-style: preserve-3d;
-  animation: bf-full-spin 6s linear infinite !important;
 }
 
 .visual-card .orbital-3d .orbit-one {
-  --tilt: 65deg;
+  animation: bf-3d-orbit-one 6s linear infinite !important;
 }
 
 .visual-card .orbital-3d .orbit-two {
-  --tilt: 65deg;
-  animation-duration: 8s !important;
-  animation-direction: reverse;
+  animation: bf-3d-orbit-two 8s linear infinite !important;
 }
 
 .visual-card .orbital-3d .orbit-three {
-  --tilt: 45deg;
-  animation-duration: 10s !important;
+  animation: bf-3d-orbit-three 10s linear infinite !important;
 }
 
-@keyframes bf-full-spin {
+@keyframes bf-3d-orbit-one {
   from {
-    transform: translate(-50%, -50%) rotateX(var(--tilt, 65deg)) rotateZ(0deg);
+    transform: translate(-50%, -50%) rotateX(65deg) rotateZ(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotateX(var(--tilt, 65deg)) rotateZ(360deg);
+    transform: translate(-50%, -50%) rotateX(65deg) rotateZ(360deg);
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .visual-card .orbital-3d .orbit {
-    animation: none !important;
+@keyframes bf-3d-orbit-two {
+  from {
+    transform: translate(-50%, -50%) rotateY(65deg) rotateZ(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateY(65deg) rotateZ(360deg);
+  }
+}
+
+@keyframes bf-3d-orbit-three {
+  from {
+    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(360deg);
   }
 }

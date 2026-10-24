@@ -1965,3 +1965,92 @@ margin: 0;
 max-width: 560px;
 line-height: 1.8;
 }
+/* BlockForge Visit Us Section */
+.visit-section {
+padding: 60px 0 80px;
+}
+
+.visit-card {
+display: flex;
+align-items: center;
+gap: 28px;
+padding: 38px;
+border: 1px solid rgba(181, 243, 106, 0.25);
+border-radius: 24px;
+background: #111411;
+box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.visit-icon {
+flex-shrink: 0;
+width: 76px;
+height: 76px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #b5f36a;
+border: 1px solid rgba(181, 243, 106, 0.45);
+border-radius: 50%;
+background: rgba(181, 243, 106, 0.08);
+}
+
+.visit-content {
+flex: 1;
+min-width: 0;
+}
+
+.visit-content .eyebrow {
+color: #b5f36a;
+margin-bottom: 12px;
+}
+
+.visit-content h2 {
+margin: 0 0 16px;
+color: #f4f6f1;
+font-size: 32px;
+}
+
+.visit-address {
+margin: 0 0 14px;
+color: #f4f6f1;
+font-size: 18px;
+line-height: 1.8;
+}
+
+.visit-description {
+margin: 0;
+color: #b7beb3;
+font-size: 16px;
+line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+.visit-section {
+padding: 40px 0 55px;
+}
+
+.visit-card {
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+padding: 26px 22px;
+border-radius: 20px;
+}
+
+.visit-icon {
+width: 62px;
+height: 62px;
+}
+
+.visit-content h2 {
+font-size: 27px;
+}
+
+.visit-address {
+font-size: 16px;
+}
+
+.visit-description {
+font-size: 15px;
+}
+}

@@ -1399,3 +1399,102 @@ filter: drop-shadow(0 0 16px rgba(181, 243, 106, 0.8));
 animation: none;
 }
 }
+/* Enhanced BlockForge animation */
+.visual-card .orbital {
+animation: bf-float 4s ease-in-out infinite;
+}
+
+.visual-card .orbit-one {
+animation: bf-orbit-one 10s linear infinite;
+transform-origin: center;
+}
+
+.visual-card .orbit-two {
+animation: bf-orbit-two 15s linear infinite;
+transform-origin: center;
+}
+
+.visual-card .orbit-three {
+animation: bf-orbit-three 20s linear infinite;
+transform-origin: center;
+}
+
+.visual-card .node-one {
+animation: bf-particle-one 4s ease-in-out infinite;
+}
+
+.visual-card .node-two {
+animation: bf-particle-two 5s ease-in-out infinite;
+}
+
+.visual-card .node-three {
+animation: bf-particle-three 4.5s ease-in-out infinite;
+}
+
+.visual-card .node-four {
+animation: bf-particle-four 5.5s ease-in-out infinite;
+}
+
+.visual-card .core {
+animation: bf-core-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes bf-orbit-one {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+
+@keyframes bf-orbit-two {
+from { transform: rotate(360deg); }
+to { transform: rotate(0deg); }
+}
+
+@keyframes bf-orbit-three {
+from { transform: rotate(0deg); }
+to { transform: rotate(-360deg); }
+}
+
+@keyframes bf-float {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-7px); }
+}
+
+@keyframes bf-particle-one {
+0%, 100% { transform: translate(0, 0); }
+50% { transform: translate(5px, -7px); }
+}
+
+@keyframes bf-particle-two {
+0%, 100% { transform: translate(0, 0); }
+50% { transform: translate(-7px, 5px); }
+}
+
+@keyframes bf-particle-three {
+0%, 100% { transform: translate(0, 0); }
+50% { transform: translate(6px, 6px); }
+}
+
+@keyframes bf-particle-four {
+0%, 100% { transform: translate(0, 0); }
+50% { transform: translate(-5px, -6px); }
+}
+
+@keyframes bf-core-glow {
+0%, 100% {
+filter: drop-shadow(0 0 4px rgba(181, 243, 106, 0.2));
+}
+50% {
+filter: drop-shadow(0 0 18px rgba(181, 243, 106, 0.85));
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.visual-card .orbital,
+.visual-card .orbit-one,
+.visual-card .orbit-two,
+.visual-card .orbit-three,
+.visual-card .node,
+.visual-card .core {
+animation: none !important;
+}
+}

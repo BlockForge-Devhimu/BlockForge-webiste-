@@ -2227,3 +2227,20 @@ align-items: center !important;
 .visit-section .visit-card .visit-content .eyebrow {
 display: block;
 }
+/* Reduce space around Visit Us and footer */
+.visit-section {
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+margin-bottom: 0 !important;
+}
+
+.visit-card {
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+margin-bottom: 0 !important;
+}
+
+.visit-section + .footer {
+margin-top: 0 !important;
+padding-top: 30px !important;
+}

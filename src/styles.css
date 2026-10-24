@@ -1309,3 +1309,93 @@ textarea {
     animation: none;
   }
 }
+/* BlockForge orbital logo animation */
+.visual-card .orbital {
+position: relative;
+animation: bf-float 4s ease-in-out infinite;
+}
+
+.visual-card .orbit {
+transform-origin: center;
+animation: bf-spin 12s linear infinite;
+}
+
+.visual-card .orbit-one {
+animation-duration: 10s;
+}
+
+.visual-card .orbit-two {
+animation-duration: 15s;
+animation-direction: reverse;
+}
+
+.visual-card .orbit-three {
+animation-duration: 20s;
+}
+
+.visual-card .node {
+transform-box: fill-box;
+transform-origin: center;
+animation: bf-node-pulse 2s ease-in-out infinite alternate;
+}
+
+.visual-card .node-two {
+animation-delay: 0.5s;
+}
+
+.visual-card .node-three {
+animation-delay: 1s;
+}
+
+.visual-card .node-four {
+animation-delay: 1.5s;
+}
+
+.visual-card .core {
+animation: bf-core-glow 3s ease-in-out infinite;
+}
+
+@keyframes bf-spin {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+
+@keyframes bf-float {
+0%, 100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-8px);
+}
+}
+
+@keyframes bf-node-pulse {
+from {
+opacity: 0.65;
+}
+to {
+opacity: 1;
+}
+}
+
+@keyframes bf-core-glow {
+0%, 100% {
+filter: drop-shadow(0 0 3px rgba(181, 243, 106, 0.2));
+}
+50% {
+filter: drop-shadow(0 0 16px rgba(181, 243, 106, 0.8));
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.visual-card .orbital,
+.visual-card .orbit,
+.visual-card .node,
+.visual-card .core {
+animation: none;
+}
+}

@@ -2154,3 +2154,53 @@ gap: 12px;
 align-items: flex-start;
 }
 }
+/* BlockForge - Centered Visit Us Section */
+.visit-section {
+padding: 35px 20px 45px;
+}
+
+.visit-card {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+text-align: center;
+border: none;
+border-radius: 0;
+background: transparent;
+box-shadow: none;
+}
+
+.visit-icon {
+width: 54px;
+height: 54px;
+margin: 0 auto;
+}
+
+.visit-content {
+width: 100%;
+min-width: 0;
+text-align: center;
+}
+
+.visit-content .eyebrow {
+margin-bottom: 8px;
+}
+
+.visit-content h2 {
+margin: 0 0 12px;
+font-size: 26px;
+}
+
+.visit-address {
+margin: 0;
+font-size: 16px;
+line-height: 1.7;
+}
+
+.visit-description {
+display: none;
+}
